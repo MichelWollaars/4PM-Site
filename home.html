@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center>
+<style>
+body {background: url("./images/achtergrond02.png");
+    background-position: center no-repeat;
+	height: 
+	}
+	
+	
+	
+ul.topnav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+  
+  
+}
+
+
+ul.topnav li {
+float: left;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #9b341b;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  } 
+}
+
+
+</style>
+<ul class="topnav" id="myTopnav">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="video.html">Video</a></li>
+  <li><a href="audio.html">Audio</a></li>
+  <li><a href="boekingen.html">Boekingen</a></li>
+  <li><a href="enquete.html">Enquete</a></li>
+  <li><a href="http://localhost/index.php">Recensies</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+</center>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+
+</head>
+<body>
+
+
+
+<div>
+<center><img id="4pmfotoband" src="./images/bandfade01.png" style="margin-top: 50px; width: 95%; height: 700px;"></center>
+
+ 
+</div>
+
+
+</body>
+
+
+<div id="textcarla" style="float: left; width: 20%; margin-left: 75px; font-family: Georgia;">
+
+<p>Carla is onze zangeres. Mede oprichtster van 4pm (heeeel lang geleden). 
+Deze muzikale duizendpoot kan niet alleen prachtig zingen, 
+ook op saxofoon laat zij tijdens de optredens van 4pm regelmatig van zich horen.  
+Haar passie is “theatermuziek” maar ook een chanson vertaalt zij naar het Nederlands zodat 4pm deze kan opnemen in het repertoire.
+</p>
+</div>
+
+<div id="textmark" style="float: left; width: 20%; margin-left: 30px; font-family: Georgia;">
+<p>Mark is onze bassist. Jazz, Pop, klassiek, Mark plukt of strijkt het op zijn contrabas en hij zingt ook nog eens een nootje mee. 
+Zijn contrabas is zo groot als een kleine roeiboot.
+Of Mark in de zomermaanden met zijn bas over de Loosdrechtse Plassen vaart is ons niet bekend.
+</p>
+</div>
+
+<div id="textmark" style="float: left; width: 20%; margin-left: 30px;font-family: Georgia;">
+<p>Vincent is onze gitarist. Hij bespeelt de snaren al vele jaren. 
+In 4pm akoestisch, maar Vincent heeft in het verleden meerdere (al dan niet electrische) wateren bevaren in het genre pop en jazz. 
+Vincent doet zijn achternaam eer aan: noem en zaal en hij heeft er gespeeld.
+</p>
+</div>
+
+<div id="textwim" style="float: left; width: 20%; margin-left: 30px;font-family: Georgia;">
+<p>
+Wim is onze Accordeonist. Als klein kereltje speelde hij reeds accordeon en nu, vele jaren en omzwervingen later weer. 
+Handig op alles waar maar een toets aanzit, maar zijn orgeltjes, synthesizers, keyboards, piano’s, neusfluit en 
+Joost mag weten wat nog meer, liggen stof te happen ergens op een zolder. Uiteindelijk geeft de accordeon meer dan genoeg om prachtige sferen en 
+begeleidingen neer te zetten in het repertoire van 4pm zoals alleen een accordeon dat kan.
+</p>
+</div>
+<div style="display: inline-block;">
+
+</center>
+</div>
+
+</html>

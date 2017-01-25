@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background: url("./images/achtergrond02.png");
+    background-position: center no-repeat;
+	height: 
+	}
+	
+	
+	
+ul.topnav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+  
+  
+}
+
+
+ul.topnav li {
+float: left;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #9b341b;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  } 
+}
+</style>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="video.html">Video</a></li>
+  <li><a href="audio.html">Audio</a></li>
+  <li><a href="boekingen.html">Boekingen</a></li>
+  <li><a href="enquete.html">Enquete</a></li>
+  <li><a href="http://localhost/index.php">Recensies</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">?</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</head>
+<body>
+<img id="enqueteimg" src="./images/enqueteimg.png">
+	<style>
+	#enqueteimg {
+	margin-top: 500px;
+	margin-right: 200px;
+	border-style: solid;
+    border-color: black;
+	float: right;
+	height: 172px;
+	width: 250px;
+	}
+	</style>
+
+	<div>
+<img id="musicnoteimgturned" src="./images/musicnotepngturned.png">
+	<style>
+	#musicnoteimgturned {
+	margin-top: 100px;
+	float: right;
+	margin-right: 1px;
+	height: 200px;
+	
+	}
+	
+	</style>
+</div>
+
+<form id = "form" action="formwebsite.php" method="post" style="margin-top: 80px;margin-left: 125px;font-family: Georgia;">
+			Voornaam:<br>
+		<input type="text" name="firstname"><br>
+			Achternaam:<br>
+		<input type="text" name="lastname"><br>
+			Email:<br>
+		<input type="text" name="email"><br><br><br>
+			<strong>Vraag 1: Heeft u genoten van het optreden?</strong><br>
+		<input type="radio" name="vraag" value="niettevreden"> Niet tevreden<br>
+		<input type="radio" name="vraag" value="neutraal"> Neutraal<br>
+		<input type="radio" name="vraag" value="tevreden"> Tevreden<br>
+		<br>
+			<strong>Vraag 2: Hoe was de kwaliteit van het geluid?</strong><br>
+		<input type="radio" name="vraag1" value="onvoldoende"> Onvoldoende<br>
+		<input type="radio" name="vraag1" value="neutraal"> Neutraal<br>
+		<input type="radio" name="vraag1" value="voldoende"> Voldoende<br>
+		<input type="radio" name="vraag1" value="uitstekend"> Uitstekend<br>
+		<br>
+			<strong>Vraag 3: Was het optreden lang genoeg?</strong><br>
+		<input type="radio" name="vraag2" value="male"> Onvoldoende<br>
+		<input type="radio" name="vraag2" value="neutraal"> Neutraal<br>
+		<input type="radio" name="vraag2" value="voldoende"> Voldoende<br>
+		<input type="radio" name="vraag2" value="uitstekend"> Uitstekend<br>
+		<br>
+			<strong>Vraag 4: Hoe vond u de prijs/kwaliteit verhouding?</strong><br>
+		<input type="radio" name="vraag3" value="niettevreden"> Niet tevreden<br>
+		<input type="radio" name="vraag3" value="neutraal"> Neutraal<br>
+		<input type="radio" name="vraag3" value="tevreden"> Tevreden<br>
+		<br>
+		
+		<label for = "ranking"><br>
+			<strong>Vraag 5: Hoe vond u de gehele ervaring?</strong><br>
+	</label>
+		1<input type = "range" name = "ranking" id = "ranking" min = "1" max = "10" step="1">10
+		
+		<br><br><br>
+		<strong>Eventuele opmerkingen en verbeter punten kunt u hier plaatsen:</strong><br><br>
+		<textarea rows="4" cols="50" placeholder="Typ hier uw eventuele opmerkingen en/of verbeterpunten met 4PM..."></textarea>
+		<br>
+		<input type = "submit" id = "verzend" name = "verzend" value = "Verzend" />
+													
+</form>
+
+</body>
+</html>
+
+
+</body>
+</html>
+

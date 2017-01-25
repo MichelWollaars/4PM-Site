@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background: url("./images/achtergrond02.png");
+    background-position: center no-repeat;
+	height: 
+	}
+	
+	
+	
+ul.topnav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+  
+  
+}
+
+
+ul.topnav li {
+float: left;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #9b341b;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  } 
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  } 
+</style>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="video.html">Video</a></li>
+  <li><a href="audio.html">Audio</a></li>
+  <li><a href="boekingen.html">Boekingen</a></li>
+  <li><a href="enquete.html">Enquete</a></li>
+  <li><a href="http://localhost/index.php">Recensies</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+
+<div>
+	<a href = "http://www.facebook.com"><center> <img src="./images/facebookicon.png" style = "width: 75px; height: 75px;float: right; margin-top: 415px; margin-right: 585px;"></a>
+	
+	
+</div>
+
+
+</head>
+
+<body>
+<div>
+	<img id="musicnoteimg" src="./images/musicnotepng.png">
+	<style>
+	#musicnoteimg {
+	margin-top: 45px;
+	margin-left: 450px;
+	height: 90px;
+	}
+	</style>
+</div>
+
+<div>
+<img id="musicnoteimgturned" src="./images/musicnotepngturned.png">
+	<style>
+	#musicnoteimgturned {
+	margin-top: -100px;
+	float: right;
+	margin-right: -400px;
+	height: 320px;
+	}
+	
+	</style>
+</div>
+
+<div>
+<form id = "form" action="formwebsite.php" method="post" style="margin-top: -75px;margin-left: 125px;font-family: Georgia;">
+			Voornaam:<br>
+		<input type="text" name="firstname"><br>
+			Achternaam:<br>
+		<input type="text" name="lastname"><br>
+			Email:<br>
+		<input type="text" name="telefoon"><br>
+			Telefoonnummer:<br>
+		<input type="text" name="email"><br>
+		<br><br><br>
+		<textarea rows="4" cols="50" placeholder="Tik je vraag of commentaar in..."></textarea>
+		<br>
+		<input type = "submit" id = "verzend" name = "verzend" value = "Verzend" />			
+		
+</form>
+</div>
+<a href = "http://www.twitter.com"> <img src="./images/twittericon.png" style = "width: 75px; height: 75px;float: left; margin-top: 42px; margin-left: 585px;"></a>
+
+
+
+
+</body>
+</html>
